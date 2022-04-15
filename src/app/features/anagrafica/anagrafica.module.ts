@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AnagraficaRoutingModule } from './anagrafica-routing.module';
+import { AnagraficaComponent } from './anagrafica.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AnagraficaComponent
+  ],
   imports: [
     CommonModule,
     AnagraficaRoutingModule

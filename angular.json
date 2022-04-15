@@ -6,6 +6,11 @@
     "LabRouter": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "skipTests": true
+        },
         "@schematics/angular:application": {
           "strict": true
         }
