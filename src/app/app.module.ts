@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Step1Component } from './shared/components/step1.component';
+import {AnagraficaModule} from "./features/anagrafica/anagrafica.module";
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { Step1Component } from './shared/components/step1.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AnagraficaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DichiarazioneRoutingModule } from './dichiarazione-routing.module';
 import { DichiarazioneComponent } from './dichiarazione.component';
+import {SharedModule} from "../../shared/shared.module";
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { DichiarazioneComponent } from './dichiarazione.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     DichiarazioneRoutingModule
   ]
 })
