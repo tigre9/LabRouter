@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {AnagraficaComponent} from "../anagrafica/anagrafica.component";
 import {Step1Component} from "../../shared/components/step1.component";
 import {Step2Component} from "../../shared/components/step2.component";
 import {Step3Component} from "../../shared/components/step3.component";
