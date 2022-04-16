@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
       <span class="step" routerLink="step3" routerLinkActive="is-active">Step 3</span>
     </div>
 
-    <router-outlet></router-outlet>
+    <router-outlet ></router-outlet>
   `,
   styles: [`
     .step {

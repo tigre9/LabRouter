@@ -3,17 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import {AnagraficaComponent} from "./features/anagrafica/anagrafica.component";
 
 const routes: Routes = [
+
   { path: '' , pathMatch:'full', redirectTo:'anagrafica'},
-  // { path: '' , pathMatch:'full', redirectTo:'dichiarazione'},
-
-
   { path: 'anagrafica' , component: AnagraficaComponent},
-  {
-    path: 'dichiarazione',
-    loadChildren: () => import('./features/dichiarazione/dichiarazione.module').then(m => m.DichiarazioneModule)
-  },
 
-  { path: '**' , redirectTo:'anagrafica'},
+
+  // { path: '' , pathMatch:'full', redirectTo:'dichiarazione'},
+  // {path: 'dichiarazione', loadChildren: () => import('./features/dichiarazione/dichiarazione.module').then(m => m.DichiarazioneModule)},
+
 
 ];
 
