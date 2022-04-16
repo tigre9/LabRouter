@@ -4,10 +4,11 @@ import {AnagraficaComponent} from "./features/anagrafica/anagrafica.component";
 
 const routes: Routes = [
 
+  //T caso 1 modulo normale
   { path: '' , pathMatch:'full', redirectTo:'anagrafica'},
   { path: 'anagrafica' , component: AnagraficaComponent},
 
-
+  //T caso 2 modulo caricato in lazy loading
   // { path: '' , pathMatch:'full', redirectTo:'dichiarazione'},
   // {path: 'dichiarazione', loadChildren: () => import('./features/dichiarazione/dichiarazione.module').then(m => m.DichiarazioneModule)},
 
