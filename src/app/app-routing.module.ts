@@ -5,8 +5,7 @@ import {AnagraficaComponent} from "./features/anagrafica/anagrafica.component";
 const routes: Routes = [
 
   //T caso 1 modulo normale
-  { path: '' , pathMatch:'full', redirectTo:'/anagrafica'},
-  { path: '**' , pathMatch:'full', redirectTo:'/anagrafica'},
+  // vedere file di routing specifico
 
 
   //T caso 2 modulo caricato in lazy loading

@@ -6,15 +6,18 @@ import {Step3Component} from "../../shared/components/step3.component";
 import {AnagraficaComponent} from "./anagrafica.component";
 
 const routes: Routes = [
+  { path: '', redirectTo: 'anagrafica', pathMatch: 'full' },
   { path: 'anagrafica',
     component: AnagraficaComponent,
     children: [
-      {path: 'step1', outlet:'sezione', component: Step1Component},
-      {path: 'step2', outlet:'sezione', component: Step2Component},
-      {path: 'step3', outlet:'sezione', component: Step3Component},
-      {path: '', pathMatch:'full', redirectTo: 'step1'}, //una url senza valori viene reindirizzata su step1
+      {path: '', pathMatch:'full', redirectTo: 'step1'},
+      {path: 'step1', component: Step1Component},
+      {path: 'step2', component: Step2Component},
+      {path: 'step3', component: Step3Component},
     ]
-  }
+  },
+  {path: '**', pathMatch:'full', redirectTo: 'anagrafica'},
+
 
 ];
 
